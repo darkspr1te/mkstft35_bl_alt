@@ -16,14 +16,14 @@ static void deinit(void);
 int main(void) {
     init();
 
-    uint8_t res = firmware_init();
-    if (!res) {
-        check_and_run();
-        error();
-    }
+   // uint8_t res = firmware_init();
+   // if (!res) {
+   //     check_and_run();
+  //      error();
+  //  }
 
-    uint16_t curr_ver = firmware_curr_version();
-    uint16_t new_ver = firmware_new_version();
+   // uint16_t curr_ver = firmware_curr_version();
+  //  uint16_t new_ver = firmware_new_version();
     update_and_run(firmware_update);
     /*
     if (curr_ver < new_ver) {
